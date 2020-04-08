@@ -83,7 +83,7 @@ public class Order {
 			sb.append(o.getProduct().getName() + ", $");
 			sb.append(String.format("%.2f", o.getProduct().getPrice()) + ", ");
 			sb.append("Quantity: " + o.getQuantity() + ", ");
-			sb.append("Subtotal: $" + String.format("%.2f", o.subTotal() + "\n"));
+			sb.append("Subtotal: $" + String.format("%.2f", o.subTotal()) + "\n");
 		}
 		sb.append("Total price: $" + String.format("%.2f", total()));
 		return sb.toString();
